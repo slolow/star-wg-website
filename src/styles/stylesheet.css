@@ -1,0 +1,127 @@
+/*SASS Stylesheet*/
+/*change fint family for every text!*/
+/*$color: green;*/
+body {
+  font-family: "Bradley Hand ITC";
+}
+
+.subtitle, h1 {
+  text-align: center;
+  color: darkGrey;
+}
+
+h1 {
+  background-color: lightGrey;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 500px) {
+  .long-title::before {
+    content: "Star Chefs from the Star WG";
+  }
+}
+@media (max-width: 499px) {
+  .long-title::before {
+    content: "Star Chefs";
+  }
+}
+.subtitle {
+  background-color: White;
+  margin-bottom: 0;
+  margin: 1% 0 1% 0;
+}
+
+.small-img, .large-img {
+  background-color: lightGrey;
+  border-radius: 50px;
+  padding: 2%;
+}
+
+.large-img {
+  width: 20%;
+  margin: 0 40% 0 40%;
+}
+
+.small-img {
+  width: 40%;
+  margin: 0 30% 5% 30%;
+}
+
+video {
+  margin: 0 35% 5% 35%;
+  padding: 2%;
+  background-color: lightGrey;
+  border-radius: 0 50px 0 50px;
+}
+
+table {
+  font-family: "Calibri";
+  border: 6px grey solid;
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: 10%;
+}
+
+th, td {
+  border: 1px solid grey;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  background-color: lightGrey;
+}
+
+a {
+  color: darkGrey;
+  margin: 2% 2%;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+.link-space {
+  margin-top: 2%;
+}
+
+.list-group-item.list-group-item-action.active {
+  background-color: lightGrey;
+  border: none;
+}
+
+.member-list, .list-group-item {
+  text-align: center;
+  font-family: "Calibri";
+}
+
+.member-list {
+  font-size: 200%;
+}
+
+.btn.btn-primary {
+  font-size: 200%;
+  background-color: lightGrey;
+  border: none;
+}
+
+#Contact-message, #Contact-text {
+  color: darkGrey;
+  font-size: 300%;
+}
+
+#nesting-example p, #Contact-message, #Contact-text {
+  text-align: center;
+}
+
+#Contact-message {
+  margin-left: 30%;
+  border: none;
+}
+
+#nesting-example p {
+  color: darkGrey;
+  font-size: 300%;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

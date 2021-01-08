@@ -1,0 +1,149 @@
+/*SASS Stylesheet*/
+$background-color: lightGrey;
+$color: darkGrey;
+/*change fint family for every text!*/
+/*$color: green;*/
+
+body {
+  font-family: "Bradley Hand ITC";
+}
+
+%h1 {
+  text-align: center;
+  color: $color;
+}
+
+h1 {
+  @extend %h1;
+  background-color: $background-color;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 500px) {
+    .long-title::before {
+        content: "Star Chefs from the Star WG";
+    }
+}
+
+@media (max-width: 499px) {
+    .long-title::before {
+        content: "Star Chefs";
+    }
+  }
+
+.subtitle {
+  @extend %h1;
+  background-color: White;
+  margin-bottom: 0;
+  margin: 1% 0 1% 0;
+}
+
+%img {
+  background-color: $background-color;
+  border-radius: 50px;
+  padding: 2%;
+}
+
+.large-img {
+  @extend %img;
+  width: 20%;
+  margin: 0 40% 0 40%;
+}
+
+.small-img {
+  @extend %img;
+  width: 40%;
+  margin: 0 30% 5% 30%;
+}
+
+video {
+  margin: 0 35% 5% 35%;
+  padding: 2%;
+  background-color: $background-color;
+  border-radius:0 50px 0 50px;
+}
+
+table {
+  font-family: "Calibri";
+  border: 6px grey solid;
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: 10%;
+}
+
+th, td {
+  border: 1px solid grey;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  background-color: $background-color;
+}
+
+a {
+  color: $color;
+  margin: 2% 2%;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+.link-space {
+  margin-top: 2%;
+}
+
+.list-group-item.list-group-item-action.active {
+  background-color: $background-color;
+  border: none;
+}
+
+%list-group-item {
+  text-align: center;
+  font-family: "Calibri";
+}
+
+.list-group-item  {
+  @extend %list-group-item;
+}
+
+.member-list {
+  @extend %list-group-item;
+  font-size: 200%;
+}
+
+.btn.btn-primary {
+  font-size: 200%;
+  background-color: $background-color;
+  border: none;
+}
+
+%contact {
+  color: $color;
+  font-size: 300%;
+}
+
+%p {
+  text-align: center;
+}
+
+#Contact-text {
+  @extend %contact;
+  @extend %p;
+}
+
+#Contact-message {
+  @extend %contact;
+  @extend %p;
+  margin-left: 30%;
+  border: none;
+}
+
+#nesting-example {
+  p {
+    @extend %p;
+    color: $color;
+    font-size: 300%;
+  }
+}
